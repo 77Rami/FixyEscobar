@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FixyEscobar</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/estilos.css" />
+  <link rel="stylesheet" href="../css/normalizar.css" />
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="py-3 border-bottom bg-dark text-white">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a href="#"><img class="logo" src="../multimedia/fixy.escobar.logo.png" alt="Logo de Fixy Escobar" /></a>
+      <ul class="navbar-links d-flex gap-4 list-unstyled m-0">
+        <li><a href="/index.html">Inicio</a></li>
+        <li><a href="/pages/nosotros.html">Sobre Nosotros</a></li>
+        <li><a href="/pages/productos.html">Productos</a></li>
+        <li><a href="/pages/contacto.html">Contacto</a></li>
+        
+      </ul>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="bg-tech text-white py-5">
+    <div class="container">
+      <h1 class="titulo-principal mb-5">Contacto</h1>
+
+      <!-- Datos de contacto -->
+      <section class="mb-5">
+        <h2 class="mb-3">¿Querés hablar con nosotros?</h2>
+        <p class="fs-5">📱 WhatsApp: <a href="https://wa.me/543484363102" class="text-white" target="_blank">+54 9 3484 363102</a></p>
+        <p class="fs-5">📷 Instagram: <a href="https://www.instagram.com/fixy.escobar/?hl=es-la" class="text-white" target="_blank">@fixy.escobar</a></p>
+      </section>
+
+      <!-- Formulario de contacto -->
+      <section class="bg-dark rounded p-4 shadow-lg">
+        <form>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" placeholder="Ej: Julieta" required>
+            </div>
+            <div class="col-md-6">
+              <label for="apellido" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="apellido" placeholder="Ej: Caceres" required>
+            </div>
+            <div class="col-md-12">
+              <label for="email" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="email" placeholder="Ej: tuemail@email.com" required>
+            </div>
+            <div class="col-md-12">
+              <label for="consulta" class="form-label">Consulta</label>
+              <textarea class="form-control" id="consulta" rows="4" placeholder="Dejanos tu mensaje..." required></textarea>
+            </div>
+            <div class="col-md-12 text-end">
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white text-center py-3 mt-4">
+    <ul class="navbar-links2 list-unstyled d-flex justify-content-center gap-4 mb-2">
+      <li><a href="contacto.html">Contacto y Redes</a></li>
+      
+    </ul>
+    <small>&copy; 2024 Fixy Escobar. Todos los derechos reservados.</small>
+  </footer>
+
+</body>
+</html>

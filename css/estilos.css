@@ -1,0 +1,121 @@
+/* Tipografía desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cantata+One&family=Orbitron:wght@500&display=swap');
+
+/* ---------- GENERALES ---------- */
+html {
+  font-family: 'Orbitron', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---------- NAVBAR ---------- */
+.logo {
+  width: 180px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.navbar-links a:hover {
+  color: #0ef6cc;
+}
+
+/* ---------- TITULOS ---------- */
+.titulo-principal {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #0ef6cc;
+}
+
+/* ---------- FONDO TECNOLÓGICO ---------- */
+.bg-tech {
+  background: linear-gradient(to bottom, #0a9396, #003844);
+}
+
+/* ---------- SECCIONES ---------- */
+section {
+  margin-bottom: 2rem;
+}
+
+/* ---------- FORMULARIOS ---------- */
+form label {
+  color: #fff;
+  font-weight: 500;
+}
+
+form input,
+form textarea,
+form select {
+  background-color: #222;
+  color: white;
+  border: 1px solid #555;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  border-color: #0ef6cc;
+  outline: none;
+  box-shadow: 0 0 8px rgba(14, 246, 204, 0.5);
+}
+
+/* ---------- BOTONES ---------- */
+.btn-primary {
+  background-color: #0ef6cc;
+  border-color: #0ef6cc;
+  color: #000;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #0bcab0;
+  border-color: #0bcab0;
+}
+
+.btn-outline-light:hover {
+  background-color: #0ef6cc;
+  color: #000;
+}
+
+/* ---------- FOOTER ---------- */
+footer a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+footer a:hover {
+  color: #0ef6cc;
+}
+
+.navbar-links2 {
+  list-style: none;
+  padding-left: 0;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* ---------- IMÁGENES Y CONTENEDORES ---------- */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card {
+  border: none;
+}
+
+.shadow-lg {
+  box-shadow: 0 0 25px rgba(0, 255, 170, 0.15) !important;
+}

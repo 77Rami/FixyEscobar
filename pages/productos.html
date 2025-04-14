@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FixyEscobar</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/estilos.css" />
+  <link rel="stylesheet" href="../css/normalizar.css" />
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="py-3 border-bottom bg-dark text-white">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a href="#"><img class="logo" src="../multimedia/fixy.escobar.logo.png" alt="Logo de Fixy Escobar" /></a>
+      <ul class="navbar-links d-flex gap-4 list-unstyled m-0">
+        <li><a href="/index.html">Inicio</a></li>
+        <li><a href="/pages/nosotros.html">Sobre Nosotros</a></li>
+        <li><a href="/pages/productos.html">Productos</a></li>
+        <li><a href="/pages/contacto.html">Contacto</a></li>
+        
+      </ul>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="bg-tech text-white py-5">
+    <div class="container">
+
+      <!-- Título de la página -->
+      <h1 class="titulo-principal mb-5">Nuestros Productos</h1>
+
+      <!-- Banner -->
+      <div class="text-center mb-5">
+        <img src="../multimedia/baneeer.jpeg" alt="Banner de productos" class="img-fluid rounded shadow-lg">
+      </div>
+
+      <!-- Formulario de filtros -->
+      <section class="mb-5">
+        <h2 class="mb-4">Filtrar búsqueda</h2>
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="marca" class="form-label">Marca</label>
+            <select class="form-select" id="marca" name="marca">
+              <option selected disabled>Seleccioná una marca</option>
+              <option value="Iphone">iPhone</option>
+              <option value="Samsung">Samsung</option>
+              <option value="Motorola">Motorola</option>
+              <option value="Xiaomi">Xiaomi</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label for="estado" class="form-label">Estado</label>
+            <select class="form-select" id="estado" name="estado">
+              <option selected disabled>Seleccioná el estado</option>
+              <option value="Nuevo">Nuevo</option>
+              <option value="Usado">Usado</option>
+            </select>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Aplicar Filtros</button>
+          </div>
+        </form>
+      </section>
+
+      <!-- Cards de lanzamientos -->
+      <section class="mb-5">
+        <h2 class="mb-4">Últimos lanzamientos</h2>
+        <div class="row g-4">
+
+          <!-- iPhone -->
+          <div class="col-lg-6">
+            <div class="card bg-dark text-white h-100 shadow">
+              <div class="card-body">
+                <h5 class="card-title">Apple: iPhone 16e</h5>
+                <iframe class="w-100" height="250" src="https://www.youtube.com/embed/mFuyX1XgJFg" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!-- Samsung -->
+          <div class="col-lg-6">
+            <div class="card bg-dark text-white h-100 shadow">
+              <div class="card-body">
+                <h5 class="card-title">Samsung: Galaxy S25 Ultra</h5>
+                <iframe class="w-100" height="250" src="https://www.youtube.com/embed/3i1OB6wKYms" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!-- Motorola -->
+          <div class="col-lg-6">
+            <div class="card bg-dark text-white h-100 shadow">
+              <div class="card-body">
+                <h5 class="card-title">Motorola: Edge 50 Ultra</h5>
+                <iframe class="w-100" height="250" src="https://www.youtube.com/embed/IW6mdplsH50" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!-- Xiaomi -->
+          <div class="col-lg-6">
+            <div class="card bg-dark text-white h-100 shadow">
+              <div class="card-body">
+                <h5 class="card-title">Xiaomi: 15 Ultra</h5>
+                <iframe class="w-100" height="250" src="https://www.youtube.com/embed/HPh7xFk_3zA" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white text-center py-3 mt-4">
+    <ul class="navbar-links2 list-unstyled d-flex justify-content-center gap-4 mb-2">
+        <li><a href="contacto.html">Contacto y Redes</a></li>
+      
+    </ul>
+    <small>&copy; 2024 Fixy Escobar. Todos los derechos reservados.</small>
+  </footer>
+
+</body>
+</html>
