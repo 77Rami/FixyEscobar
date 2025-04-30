@@ -1,84 +1,83 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FixyEscobar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto | FixyEscobar</title>
 
-  <!-- CSS -->
+  <!-- Tipografías -->
+  <link href="https://fonts.googleapis.com/css2?family=Cantata+One&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Estilos compilados desde Sass -->
   <link rel="stylesheet" href="../css/estilos.css" />
-  <link rel="stylesheet" href="../css/normalizar.css" />
 
   <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
+<body class="bg-dark text-light">
 
-<body>
-
-  <!-- HEADER -->
-  <header class="py-3 border-bottom bg-dark text-white">
-    <div class="container d-flex justify-content-between align-items-center">
-      <a href="#"><img class="logo" src="../multimedia/fixy.escobar.logo.png" alt="Logo de Fixy Escobar" /></a>
-      <ul class="navbar-links d-flex gap-4 list-unstyled m-0">
-        <li><a href="/pages/index.html">Inicio</a></li>
-        <li><a href="/pages/nosotros.html">Sobre Nosotros</a></li>
-        <li><a href="/pages/productos.html">Productos</a></li>
-        <li><a href="/pages/contacto.html">Contacto</a></li>
-        
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar px-4 py-2 d-flex justify-content-between align-items-center" style="background-color: #000;">
+      <div class="contenedor-logo">
+        <a href="#"><img class="logo" src="../multimedia/fixy.escobar.logo.png" alt="logo de la marca" style="height: 45px;"></a>
+      </div>
+      <ul class="navbar-links d-flex gap-3 list-unstyled mb-0">
+        <li><a href="../index.html" class="text-white text-decoration-none fw-semibold">Inicio</a></li>
+        <li><a href="nosotros.html" class="text-white text-decoration-none fw-semibold">Sobre Nosotros</a></li>
+        <li><a href="productos.html" class="text-white text-decoration-none fw-semibold">Productos</a></li>
+        <li><a href="contacto.html" class="text-white text-decoration-none fw-semibold">Contacto</a></li>
       </ul>
-    </div>
+    </nav>
   </header>
 
   <!-- MAIN -->
-  <main class="bg-tech text-white py-5">
-    <div class="container">
-      <h1 class="titulo-principal mb-5">Contacto</h1>
+  <main class="container py-5 contacto-page">
+    <section class="text-center mb-5">
+      <h1 class="titulo-principal animate__animated animate__flipInY">Contacto</h1>
+      <p class="lead animate__animated animate__fadeInUp">¿Tenés alguna duda? Escribinos o contactanos por nuestras redes.</p>
+      <p><strong>WhatsApp:</strong> +54 9 3484 36-3102</p>
+      <p><strong>Instagram:</strong> <a href="https://www.instagram.com/_77.store/" target="_blank" rel="noopener noreferrer" class="text-info">@_77.store</a></p>
+    </section>
 
-      <!-- Datos de contacto -->
-      <section class="mb-5">
-        <h2 class="mb-3">¿Querés hablar con nosotros?</h2>
-        <p class="fs-5">📱 WhatsApp: <a href="https://wa.me/543484363102" class="text-white" target="_blank">+54 9 3484 363102</a></p>
-        <p class="fs-5">📷 Instagram: <a href="https://www.instagram.com/fixy.escobar/?hl=es-la" class="text-white" target="_blank">@fixy.escobar</a></p>
-      </section>
-
-      <!-- Formulario de contacto -->
-      <section class="bg-dark rounded p-4 shadow-lg">
-        <form>
-          <div class="row g-4">
-            <div class="col-md-6">
-              <label for="nombre" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="nombre" placeholder="Ej: Julieta" required>
-            </div>
-            <div class="col-md-6">
-              <label for="apellido" class="form-label">Apellido</label>
-              <input type="text" class="form-control" id="apellido" placeholder="Ej: Caceres" required>
-            </div>
-            <div class="col-md-12">
-              <label for="email" class="form-label">Correo Electrónico</label>
-              <input type="email" class="form-control" id="email" placeholder="Ej: tuemail@email.com" required>
-            </div>
-            <div class="col-md-12">
-              <label for="consulta" class="form-label">Consulta</label>
-              <textarea class="form-control" id="consulta" rows="4" placeholder="Dejanos tu mensaje..." required></textarea>
-            </div>
-            <div class="col-md-12 text-end">
-              <button type="submit" class="btn btn-primary">Enviar</button>
-            </div>
-          </div>
-        </form>
-      </section>
-    </div>
+    <section class="mx-auto" style="max-width: 600px;">
+      <form action="#" method="post" class="bg-black p-4 rounded shadow-sm animate__animated animate__fadeInRightBig">
+        <div class="mb-3">
+          <label for="nombre" class="form-label text-info">Nombre</label>
+          <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Ej: Julieta">
+        </div>
+        <div class="mb-3">
+          <label for="apellido" class="form-label text-info">Apellido</label>
+          <input type="text" id="apellido" name="apellido" class="form-control" placeholder="Ej: Caceres">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label text-info">Email</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="Ej: tuemail@email.com">
+        </div>
+        <div class="mb-3">
+          <label for="consulta" class="form-label text-info">Consulta</label>
+          <textarea id="consulta" name="consulta" rows="4" class="form-control" placeholder="Escribí tu mensaje..."></textarea>
+        </div>
+        <div class="d-grid">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
+    </section>
   </main>
 
   <!-- FOOTER -->
-  <footer class="bg-dark text-white text-center py-3 mt-4">
-    <ul class="navbar-links2 list-unstyled d-flex justify-content-center gap-4 mb-2">
-      <li><a href="contacto.html">Contacto y Redes</a></li>
-      
+  <footer class="text-center py-4 border-top border-secondary mt-5">
+    <ul class="navbar-links2 list-unstyled mb-0">
+      <li><a href="#" class="text-info text-decoration-none">Contacto</a></li>
     </ul>
-    <small>&copy; 2024 Fixy Escobar. Todos los derechos reservados.</small>
   </footer>
 
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </body>
 </html>

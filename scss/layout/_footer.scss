@@ -1,0 +1,26 @@
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 1rem;
+  
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  
+    .navbar-links2 {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      padding: 0;
+    }
+  
+    @include responsive(mobile) {
+      .navbar-links2 {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+  }
