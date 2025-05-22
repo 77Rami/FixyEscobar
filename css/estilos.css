@@ -1,187 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@500;700&display=swap');
+
+:root {
+  --color-cyan: #0ef6cc;
+  --color-dark: #121212;
+  --color-bg: #003844;
+  --color-light: #f1f1f1;
+  --transition: all 0.3s ease;
+}
+
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
-  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--color-dark);
+  color: var(--color-light);
   line-height: 1.6;
-  background-color: #0a9396;
+  overflow-x: hidden;
 }
 
-h1, h2, h3, h4 {
-  font-family: "Cantata One", serif;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  margin-bottom: 0.5rem;
-}
-
-p, li, input, textarea, label {
-  font-size: 1rem;
-  font-family: "Open Sans", sans-serif;
-}
-
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem 1.5rem;
-  background-color: #0a9396;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-}
-.navbar .contenedor-logo img.logo {
-  height: 45px;
-}
-.navbar .navbar-links {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-  margin: 0;
-}
-.navbar .navbar-links li a {
+a {
   text-decoration: none;
-  color: white;
-  font-weight: 600;
-  padding: 0.5rem 0.75rem;
-  border-radius: 5px;
-  transition: background 0.3s;
+  color: var(--color-light);
+  transition: var(--transition);
 }
-.navbar .navbar-links li a:hover {
-  background-color: rgb(13.1875, 193.85625, 197.8125);
+
+a:hover {
+  color: var(--color-cyan);
+}
+
+.logo {
+  height: 40px;
+  object-fit: contain;
+}
+
+.navbar-brand {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.nav-link {
+  color: #ddd !important;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.nav-link:hover {
+  color: var(--color-cyan) !important;
+}
+
+.bg-tech {
+  background: linear-gradient(to bottom, #007e80, #003844, #121212);
+  padding: 5rem 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+.text-cyan {
+  color: var(--color-cyan);
+}
+
+.btn-primary {
+  background-color: var(--color-cyan);
+  border: none;
+  color: #000;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: var(--transition);
+}
+
+.btn-primary:hover {
+  background-color: #0bcab0;
+  color: #000;
+}
+
+.bg-card {
+  background-color: #1a1a1a;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.shadow-tech {
+  box-shadow: 0 8px 20px rgba(14, 246, 204, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.shadow-tech:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(14, 246, 204, 0.2);
+}
+
+footer {
+  background: linear-gradient(to bottom, #121212, #0e0e0e);
+  padding: 2rem 0;
+  margin-top: 0;
+  color: #f1f1f1;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+footer a {
+  color: var(--color-light);
+}
+
+footer a:hover {
+  color: var(--color-cyan);
+}
+
+.bg-dark,
+.bg-card {
+  background-color: var(--color-dark) !important;
 }
 
 @media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem;
+  h1 {
+    font-size: 2.2rem;
   }
-  .navbar .navbar-links {
-    flex-direction: column;
-    width: 100%;
-    gap: 0.5rem;
-    padding-left: 0;
-  }
-  .navbar .navbar-links li {
-    width: 100%;
-  }
-  .navbar .navbar-links li a {
-    display: block;
-    width: 100%;
-    padding: 0.75rem;
-  }
-}
-.inicio-home {
-  background-color: #0a9396;
-  color: #ffffff;
-  padding-top: 2rem;
-  padding-bottom: 3rem;
-}
-.inicio-home .titulo-principal {
-  font-family: "Cantata One", serif;
-  font-size: 3.2rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  color: white;
-  animation: fadeInDown 1s ease-in-out;
-}
-.inicio-home p.lead {
-  font-size: 1.2rem;
-  color: white;
-}
-.inicio-home .btn-primary {
-  background-color: #005f73;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  margin-top: 1rem;
-}
-.inicio-home .btn-primary:hover {
-  background-color: rgb(0, 52.8695652174, 64);
-}
-.inicio-home .productos-destacados {
-  margin-top: 3rem;
-}
-.inicio-home .productos-destacados h2 {
-  font-family: "Cantata One", serif;
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  text-align: center;
-}
-.inicio-home .productos-destacados .card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: none;
-  border-radius: 12px;
-  overflow: hidden;
-}
-.inicio-home .productos-destacados .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-.inicio-home .productos-destacados .card .card-title {
-  font-family: "Cantata One", serif;
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-.inicio-home .productos-destacados .card .card-text {
-  font-size: 0.95rem;
-  color: #ffffff;
-}
 
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
+  .btn-primary {
+    width: 100%;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.contacto-page .titulo-principal {
-  font-family: "Cantata One", serif;
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  animation: fadeInDown 0.8s ease-in-out;
-}
-.contacto-page .lead {
-  font-size: 1.2rem;
-  margin-bottom: 1.5rem;
-  color: white;
-}
-.contacto-page a {
-  color: #005f73;
-  text-decoration: none;
-}
-.contacto-page a:hover {
-  text-decoration: underline;
-}
-.contacto-page .form-label {
-  font-weight: 600;
-}
-.contacto-page .form-control {
-  border-radius: 0.5rem;
-  padding: 0.75rem;
-}
-.contacto-page .btn-primary {
-  background-color: #005f73;
-  font-weight: bold;
-  border: none;
-}
-.contacto-page .btn-primary:hover {
-  background-color: rgb(0, 52.8695652174, 64);
-}
 
-/*# sourceMappingURL=estilos.css.map */
+  .navbar-nav {
+    gap: 1rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
+  }
+}
